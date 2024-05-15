@@ -9,7 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class EmployeeRegistrationComponent implements OnInit {
 
   departments: any = []; 
+  employeeList: any = []; 
   isListView : boolean = true;
+
+  employeeObject: any ={
+    firstName: "",
+    lastName: "",
+    department: "",
+    departmentId: "",
+    gender: "",
+    email: "",
+    phoneNumber: ""
+  }
 
   constructor(private http: HttpClient){
 
@@ -17,6 +28,7 @@ export class EmployeeRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadDepartments();
+    this.loadEmployees();
   }
 
   loadDepartments(){
@@ -26,6 +38,28 @@ export class EmployeeRegistrationComponent implements OnInit {
       console.log(res.data);
       
     })
+  }
+
+  loadEmployees(){
+    this.http.get("assets/getEmployee.json").subscribe((res: any) =>{
+      this.employeeList = res.data;
+      console.log(res.data)
+    })
+  }
+
+  onCreateEmp(){
+    this.http.get("assets/postEmployee.json").subscribe((res:any)=>{
+      alert(res.message)
+      this.loadEmployees();
+    })
+  }
+
+  onEdit(item: any) { 
+    this.employeeObject = item;
+    this.isListView = false;
+  }
+  onDelete(item: any) {
+
   }
 
 }
