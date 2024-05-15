@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class EmployeeRegistrationComponent implements OnInit {
 
   departments: any = []; 
+  isListView : boolean = true;
 
   constructor(private http: HttpClient){
 

@@ -1,0 +1,52 @@
+{
+    "data":
+        [
+            {
+                "firstName": "Ayesha",
+                "lastName": "Khan",
+                "department": "Sales",
+                "departmentId": 1,
+                "gender": "Female",
+                "email": "ayesha.khan@example.com",
+                "phoneNumber": "0712233445"
+            },
+            {
+                "firstName": "David",
+                "lastName": "Smith",
+                "department": "Marketing",
+                "departmentId": 2,
+                "gender": "Male",
+                "email": "david.smith@example.com",
+                "phoneNumber": "0713344556"
+            },
+            {
+                "firstName": "Priya",
+                "lastName": "Patel",
+                "department": "Marketing",
+                "departmentId": 2,
+                "gender": "Female",
+                "email": "priya.patel@example.com",
+                "phoneNumber": "0714455667"
+            },
+            {
+                "firstName": "John",
+                "lastName": "Doe",
+                "department": "Sales",
+                "departmentId": 1,
+                "gender": "Male",
+                "email": "john.doe@example.com",
+                "phoneNumber": "0715566778"
+            },
+            {
+                "firstName": "Lily",
+                "lastName": "Wong",
+                "department": "Finance",
+                "departmentId": 3,
+                "gender": "Female",
+                "email": "lily.wong@example.com",
+                "phoneNumber": "0716677889"
+            }
+        ]
+        
+ }
+    
